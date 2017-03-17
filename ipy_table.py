@@ -360,7 +360,7 @@ class IpyTable(object):
                 and 'float_format' in cell_style):
             text = cell_style['float_format'] % item
         else:
-            if type(item) == unicode:
+            if type(item) == str:
                 text = item
             else:
                 text = str(item)
